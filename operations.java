@@ -4,7 +4,9 @@ import java.util.*;
 
 
 public class operations {
+
     public static void counterWord(){
+//        Подсчитываем количество слов в файле
         try{
             File file = new File("input.txt");
             Scanner scanner = new Scanner(file);
@@ -21,6 +23,7 @@ public class operations {
 
     }
     public static void wordLengthMax(){
+//        Находим самое длинное слово
         try{
             File file = new File("input.txt");
             Scanner scanner = new Scanner(file);
@@ -33,13 +36,14 @@ public class operations {
 
                 }
             }
-            System.out.println("Самое длинное слово из перечисленных ниже: " + LongestWord);
+            System.out.println("Самое длинное слово из перечисленных ниже ==> " + LongestWord);
 
         } catch (FileNotFoundException e) {
             System.err.println("Файл не найден");
         }
     }
     public static void frequencyWord(){
+//        Подсчитываем сколько раз каждое слово встречается в файле
         try{
             File file = new File("input.txt");
             Scanner scanner = new Scanner(file);
